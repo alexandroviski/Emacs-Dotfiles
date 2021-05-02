@@ -1,1 +1,11 @@
 
+== Ronnie - Emacs Dotfiles  
+
+my emacs configuration
+
+* it contains
+** support for rust language
+** tron legacy theme
+** gentoo dashboard
+** minimal ui
+image::themes/banner.png[]
