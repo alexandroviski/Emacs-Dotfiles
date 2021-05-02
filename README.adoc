@@ -8,4 +8,5 @@ my emacs configuration
 ** tron legacy theme
 ** gentoo dashboard
 ** minimal ui
+
 image::themes/banner.png[]
