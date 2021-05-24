@@ -74,6 +74,7 @@
 
 (global-set-key (kbd "C-g") 'paste-clipboard-image-md5)
 ;;===================================
+(add-to-list 'custom-theme-load-path "~/.emacs.d/themes/")
 (load-theme 'tron-legacy)
 ;; cleaning emacs interface
 (menu-bar-mode -1) ; disable menu
