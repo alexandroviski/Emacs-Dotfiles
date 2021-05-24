@@ -33,6 +33,24 @@
 ;; fonts
 ;;(add-to-list 'bdf-directory-list "~/.emacs.d/bdf")
 
+;; emacs dashboard
+(require 'use-package)
+(use-package dashboard
+  :ensure t
+  :config
+  (dashboard-setup-startup-hook))
+;; costumization
+(setq dashboard-banner-logo-title "Hacking is our weapon")
+(setq dashboard-startup-banner "~/.emacs.d/themes/banner.png")
+(setq dashboard-items '((recents  . 5)
+                        (bookmarks . 5)
+                        (projects . 5)
+                        (agenda . 5)
+                        (registers . 5)))
+(setq dashboard-set-navigator t)
+(setq dashboard-set-init-info t)
+
+
 ;; paste image by tarhuntas
 (defun paste-clipboard-image-md5 (&optional dir)
   (interactive)
@@ -113,19 +131,3 @@
 
 (set-frame-font "fontset-bdf")
 ;;(set-face-attribute 'default t :font "Misc Fixed Regular" :height 100 )
-;; emacs dashboard
-(require 'use-package)
-(use-package dashboard
-  :ensure t
-  :config
-  (dashboard-setup-startup-hook))
-;; costumization
-(setq dashboard-banner-logo-title "Hacking is our weapon")
-(setq dashboard-startup-banner "~/.emacs.d/themes/banner.png")
-(setq dashboard-items '((recents  . 5)
-                        (bookmarks . 5)
-                        (projects . 5)
-                        (agenda . 5)
-                        (registers . 5)))
-(setq dashboard-set-navigator t)
-(setq dashboard-set-init-info t)
