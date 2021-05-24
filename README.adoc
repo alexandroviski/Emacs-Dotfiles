@@ -10,3 +10,6 @@ my emacs configuration
 ** minimal ui
 
 image::themes/banner.png[]
+
+=== Screenshot
+image::screenshots/2021-05-23-210702_1366x768_scrot.png[]
